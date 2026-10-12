@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — SupChat</title>
+  <meta name="description" content="Terms of Service for SupChat — an independent third-party multi-account workspace for official messaging web clients, offered via App Store subscription." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20gradientUnits='userSpaceOnUse'%20x1='0'%20y1='0'%20x2='1024'%20y2='1024'%3E%3Cstop%20offset='0'%20stop-color='%2318E299'/%3E%3Cstop%20offset='1'%20stop-color='%230fa76e'/%3E%3C/linearGradient%3E%3CclipPath%20id='c'%3E%3Cpath%20d='M512%200C128%200%200%20128%200%20512S128%201024%20512%201024s512-128%20512-512S896%200%20512%200Z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path='url(%23c)'%3E%3Crect%20width='1024'%20height='1024'%20fill='url(%23g)'/%3E%3Cpath%20transform='translate(320%20710)'%20d='M0%200C-14%2042-38%2068-76%2084C-30%2078%2038%2044%2084%200Z'%20fill='white'/%3E%3Crect%20x='182'%20y='230'%20width='660'%20height='480'%20rx='132'%20fill='white'/%3E%3Cpath%20d='M512%20230H710A132%20132%200%200%201%20842%20362V578A132%20132%200%200%201%20710%20710H512Z'%20fill='url(%23g)'%20opacity='.45'/%3E%3Crect%20x='496'%20y='310'%20width='32'%20height='320'%20rx='16'%20fill='url(%23g)'/%3E%3Crect%20x='246'%20y='422'%20width='180'%20height='36'%20rx='18'%20fill='url(%23g)'/%3E%3Crect%20x='246'%20y='482'%20width='120'%20height='36'%20rx='18'%20fill='url(%23g)'/%3E%3Crect%20x='592'%20y='452'%20width='180'%20height='36'%20rx='18'%20fill='url(%23g)'/%3E%3C/g%3E%3C/svg%3E" />
+  <style>
+    /* ─── tokens — Mintlify 设计系统契约块（:root 逐字绑定，勿改值） ─── */
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-warm: #fafafa;
+
+      --fg: #0d0d0d;
+      --fg-2: #333333;
+      --muted: #666666;
+      --meta: #888888;
+
+      --border: rgba(0, 0, 0, 0.05);
+      --border-soft: var(--border);
+
+      --accent: #18E299;
+      --accent-on: #0d0d0d;
+      --accent-hover: #0fa76e;
+      --accent-active: color-mix(in oklab, var(--accent-hover), black 12%);
+
+      --success: #16a34a;
+      --warn: #c37d0d;
+      --danger: #d45656;
+
+      --font-display: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-body: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+
+      --text-xs: 12px;
+      --text-sm: 14px;
+      --text-base: 16px;
+      --text-lg: 18px;
+      --text-xl: 20px;
+      --text-2xl: 24px;
+      --text-3xl: 40px;
+      --text-4xl: 64px;
+
+      --leading-body: 1.5;
+      --leading-tight: 1.15;
+      --tracking-display: -0.02em;
+
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-12: 48px;
+
+      --section-y-desktop: 96px;
+      --section-y-tablet: 64px;
+      --section-y-phone: 48px;
+
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+
+      --elev-flat: none;
+      --elev-ring: 0 0 0 1px var(--border);
+      --elev-raised: 0 2px 4px rgba(0, 0, 0, 0.03);
+
+      --focus-ring: 0 0 0 2px var(--accent);
+
+      --motion-fast: 150ms;
+      --motion-base: 200ms;
+      --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+      --container-max: 1200px;
+      --container-gutter-desktop: 32px;
+      --container-gutter-tablet: 24px;
+      --container-gutter-phone: 24px;
+    }
+
+    /* ─── reset & base ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font-family: var(--font-body); font-size: var(--text-base);
+      line-height: var(--leading-body); -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    p { text-wrap: pretty; }
+    h1, h2, h3 { text-wrap: balance; margin: 0; font-family: var(--font-display); }
+    :focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+    ::selection { background: color-mix(in srgb, var(--accent) 30%, transparent); }
+
+    .skip {
+      position: absolute; left: 16px; top: -48px; z-index: 60;
+      background: var(--fg); color: var(--bg);
+      padding: 10px 16px; border-radius: var(--radius-pill);
+      font-size: var(--text-sm); font-weight: 500; transition: top var(--motion-fast) var(--ease-standard);
+    }
+    .skip:focus-visible { top: 12px; box-shadow: none; }
+
+    /* ─── shell ────────────────────────────────────────────────────── */
+    .doc-shell {
+      max-width: 980px; margin-inline: auto;
+      padding-inline: var(--container-gutter-desktop);
+    }
+
+    /* ─── topnav ───────────────────────────────────────────────────── */
+    .topnav {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .topnav-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: var(--space-2) var(--space-4); padding-block: 12px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand b { font-size: 15.5px; font-weight: 600; letter-spacing: -0.01em; }
+    .brand .wm {
+      font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+      border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 3px 9px;
+    }
+    .topnav nav { display: flex; gap: 4px; }
+    .navlink {
+      font-size: var(--text-sm); font-weight: 500; color: var(--muted);
+      padding: 8px 14px; border-radius: var(--radius-pill);
+      transition: color var(--motion-fast) var(--ease-standard), background var(--motion-fast) var(--ease-standard);
+    }
+    .navlink:hover { color: var(--fg); background: color-mix(in srgb, var(--fg) 5%, transparent); }
+    .navlink[aria-current="page"] { color: var(--fg); background: color-mix(in srgb, var(--fg) 6%, transparent); }
+
+    /* ─── doc hero ─────────────────────────────────────────────────── */
+    .doc-head { padding-block: clamp(52px, 7vw, 84px) clamp(28px, 4vw, 44px); }
+    .eyebrow {
+      font-family: var(--font-mono); font-size: var(--text-xs);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 var(--space-4);
+    }
+    .doc-head h1 {
+      font-size: clamp(34px, 5vw, 48px); font-weight: 600;
+      line-height: var(--leading-tight); letter-spacing: var(--tracking-display);
+      margin: 0 0 var(--space-4); max-width: 20ch;
+    }
+    .doc-meta {
+      display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+      font-family: var(--font-mono); font-size: 12.5px; color: var(--muted);
+      margin: 0 0 var(--space-5);
+    }
+    .doc-meta .dot { color: color-mix(in srgb, var(--fg) 22%, transparent); }
+    .lead {
+      font-size: var(--text-lg); line-height: 1.6; color: var(--muted);
+      max-width: 62ch; margin: 0;
+    }
+
+    /* ─── doc layout: toc + article ────────────────────────────────── */
+    .doc-layout {
+      display: grid; grid-template-columns: 224px minmax(0, 1fr);
+      gap: clamp(40px, 5vw, 64px); align-items: start;
+      padding-block: clamp(24px, 3vw, 40px) 0;
+    }
+    .toc { position: sticky; top: 92px; }
+    .toc-title {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 var(--space-3);
+    }
+    .toc ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1px; }
+    .toc a {
+      display: flex; gap: 10px; align-items: baseline;
+      padding: 6px 12px; border-radius: var(--radius-sm);
+      font-size: 13.5px; line-height: 1.45; color: var(--muted);
+      transition: color var(--motion-fast) var(--ease-standard), background var(--motion-fast) var(--ease-standard);
+    }
+    .toc a .n {
+      font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+      font-variant-numeric: tabular-nums; transition: color var(--motion-fast) var(--ease-standard);
+    }
+    .toc a:hover { color: var(--fg); background: color-mix(in srgb, var(--fg) 4%, transparent); }
+    .toc a.is-active { color: var(--fg); background: color-mix(in srgb, var(--fg) 5%, transparent); box-shadow: inset 2px 0 0 var(--accent-hover); }
+    .toc a.is-active .n { color: var(--fg); }
+
+    /* ─── article ──────────────────────────────────────────────────── */
+    .doc-body { display: flex; flex-direction: column; min-width: 0; }
+    .doc-prose { max-width: 66ch; }
+    .doc-prose p { margin: 0 0 var(--space-4); font-size: var(--text-base); line-height: 1.7; color: var(--fg-2); }
+    .doc-prose p:last-child { margin-bottom: 0; }
+    .doc-prose strong { color: var(--fg); font-weight: 600; }
+    .doc-prose ul { margin: 0 0 var(--space-4); padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .doc-prose ul:last-child { margin-bottom: 0; }
+    .doc-prose li { position: relative; padding-left: 22px; font-size: var(--text-base); line-height: 1.65; color: var(--fg-2); }
+    .doc-prose li::before {
+      content: ""; position: absolute; left: 2px; top: 0.66em;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: color-mix(in srgb, var(--fg) 22%, transparent);
+    }
+    .doc-prose dl { margin: 0; }
+    .doc-prose dl > div { padding: 14px 0; border-top: 1px solid var(--border); }
+    .doc-prose dl > div:first-child { border-top: 0; padding-top: 4px; }
+    .doc-prose dt { font-weight: 600; color: var(--fg); font-size: 15.5px; margin-bottom: 5px; }
+    .doc-prose dd { margin: 0; font-size: var(--text-base); line-height: 1.65; color: var(--fg-2); }
+
+    .doc-section { padding-block: clamp(34px, 4vw, 46px); border-top: 1px solid var(--border); scroll-margin-top: 92px; }
+    .sec-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: var(--space-5); }
+    .sec-num {
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em;
+      color: var(--muted); font-variant-numeric: tabular-nums;
+    }
+    .doc-section h2 { font-size: var(--text-2xl); font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+
+    /* ─── summary card (the short version) ─────────────────────────── */
+    .summary {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: var(--space-6) 26px; border-radius: var(--radius-md);
+      background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+      border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+    }
+    .summary-icon {
+      flex: none; width: 40px; height: 40px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+      display: grid; place-items: center; color: var(--accent-on);
+      box-shadow: var(--elev-raised);
+    }
+    .summary-label {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin: 2px 0 8px;
+    }
+    .summary-text { font-size: 17px; line-height: 1.6; color: var(--fg); font-weight: 500; max-width: 54ch; margin: 0; }
+
+    /* ─── note card (terms) ────────────────────────────────────────── */
+    .note {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: var(--space-5) var(--space-6); border-radius: var(--radius-md);
+      background: var(--surface-warm);
+      border: 1px solid color-mix(in srgb, var(--fg) 8%, transparent);
+    }
+    .note-icon {
+      flex: none; width: 40px; height: 40px; border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      display: grid; place-items: center; color: var(--fg-2);
+    }
+    .note-label {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin: 2px 0 8px;
+    }
+    .note-text { font-size: 16px; line-height: 1.65; color: var(--fg-2); margin: 0; max-width: 56ch; }
+
+    /* ─── contact card ─────────────────────────────────────────────── */
+    .contact-card {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px;
+      border: 1px solid var(--border); border-radius: var(--radius-md);
+      background: var(--surface); box-shadow: var(--elev-raised);
+      padding: 22px 24px;
+    }
+    .cc-label {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin-right: 2px;
+    }
+    .cc-mail {
+      font-family: var(--font-mono); font-size: 16.5px; color: var(--fg);
+      text-decoration: underline;
+      text-decoration-color: color-mix(in srgb, var(--fg) 32%, transparent);
+      text-underline-offset: 4px;
+      transition: text-decoration-color var(--motion-fast) var(--ease-standard);
+    }
+    .cc-mail:hover { text-decoration-color: var(--fg); }
+    .cc-note {
+      flex-basis: 100%; margin: 2px 0 0;
+      font-family: var(--font-mono); font-size: 12px; color: var(--muted);
+    }
+    .copy-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 8px 16px; border-radius: var(--radius-pill);
+      background: var(--fg); color: var(--bg); border: 1px solid var(--fg);
+      font-size: 13.5px; font-weight: 500;
+      transition: background var(--motion-fast) var(--ease-standard), border-color var(--motion-fast) var(--ease-standard);
+    }
+    .copy-btn:hover { background: color-mix(in oklab, var(--fg), white 14%); border-color: color-mix(in oklab, var(--fg), white 14%); }
+    .copy-btn .ic-check { display: none; }
+    .copy-btn.is-copied .ic-copy { display: none; }
+    .copy-btn.is-copied .ic-check { display: block; }
+    .copy-btn svg { width: 14px; height: 14px; }
+
+    /* ─── cross link ───────────────────────────────────────────────── */
+    .crosslink {
+      display: flex; align-items: center; gap: 18px;
+      margin-top: clamp(34px, 4vw, 46px);
+      padding: 20px 24px; border-radius: var(--radius-md);
+      border: 1px solid var(--border); background: var(--surface);
+      transition: border-color var(--motion-fast) var(--ease-standard), box-shadow var(--motion-fast) var(--ease-standard);
+    }
+    .crosslink:hover { border-color: color-mix(in srgb, var(--fg) 16%, transparent); box-shadow: var(--elev-raised); }
+    .crosslink .cl-label {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 4px;
+    }
+    .crosslink .cl-title { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; color: var(--fg); }
+    .crosslink .cl-arrow {
+      margin-left: auto; flex: none; width: 32px; height: 32px; border-radius: var(--radius-pill);
+      border: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      display: grid; place-items: center; color: var(--fg-2);
+      transition: transform var(--motion-fast) var(--ease-standard), border-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard);
+    }
+    .crosslink:hover .cl-arrow { transform: translateX(3px); border-color: color-mix(in srgb, var(--fg) 30%, transparent); color: var(--fg); }
+    .crosslink .cl-arrow svg { width: 15px; height: 15px; }
+
+    /* ─── back to top ──────────────────────────────────────────────── */
+    .top-btn {
+      position: fixed; right: 22px; bottom: 22px; z-index: 30;
+      width: 44px; height: 44px; border-radius: var(--radius-pill);
+      background: var(--fg); color: var(--bg); border: 1px solid var(--fg);
+      display: grid; place-items: center;
+      box-shadow: 0 8px 20px color-mix(in srgb, var(--fg) 18%, transparent);
+      opacity: 0; transform: translateY(8px); pointer-events: none;
+      transition: opacity var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard), background var(--motion-fast) var(--ease-standard);
+    }
+    .top-btn.is-show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .top-btn:hover { background: color-mix(in oklab, var(--fg), white 14%); }
+    .top-btn svg { width: 16px; height: 16px; }
+
+    /* ─── footer ───────────────────────────────────────────────────── */
+    .pagefoot { margin-top: clamp(56px, 8vw, 88px); border-top: 1px solid var(--border); }
+    .pagefoot-inner {
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px;
+      padding-block: 32px; font-size: 13.5px; color: var(--muted);
+    }
+    .pagefoot-inner nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+    .pagefoot a { color: var(--muted); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: color var(--motion-fast) var(--ease-standard), text-decoration-color var(--motion-fast) var(--ease-standard); }
+    .pagefoot a:hover { color: var(--fg); text-decoration-color: color-mix(in srgb, var(--fg) 32%, transparent); }
+
+    /* ─── responsive ───────────────────────────────────────────────── */
+    @media (max-width: 920px) {
+      .doc-shell { padding-inline: var(--container-gutter-tablet); }
+      .doc-layout { grid-template-columns: 1fr; gap: var(--space-6); }
+      .toc { position: static; }
+      .toc ol {
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+        border: 1px solid var(--border); border-radius: var(--radius-md);
+        padding: var(--space-2); background: var(--surface);
+      }
+      .topnav nav { gap: 2px; }
+      .navlink { padding: 8px 10px; font-size: 13px; }
+    }
+    @media (max-width: 560px) {
+      .toc ol { grid-template-columns: 1fr; }
+      .brand .wm { display: none; }
+      .summary, .note { flex-direction: column; gap: 14px; }
+      .top-btn { right: 16px; bottom: 16px; }
+    }
+
+    /* ─── print ────────────────────────────────────────────────────── */
+    @media print {
+      .topnav, .toc, .top-btn, .crosslink, .skip { display: none !important; }
+      .doc-layout { display: block; }
+      .doc-section { break-inside: avoid-page; }
+      body { font-size: 12pt; }
+      .doc-prose p, .doc-prose li, .doc-prose dd { font-size: 12pt; }
+      .doc-head h1 { font-size: 24pt; }
+      .doc-section h2 { font-size: 15pt; }
+      .summary, .contact-card { box-shadow: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="topnav" data-od-id="topnav">
+    <div class="doc-shell topnav-inner">
+      <a class="brand" href="#content" aria-label="SupChat — back to top of document">
+        <svg width="28" height="28" viewBox="0 0 1024 1024" aria-hidden="true">
+          <defs>
+            <linearGradient id="scGrad" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+              <stop offset="0" style="stop-color: var(--accent);" />
+              <stop offset="1" style="stop-color: var(--accent-hover);" />
+            </linearGradient>
+            <clipPath id="scClip"><path d="M512 0C128 0 0 128 0 512S128 1024 512 1024s512-128 512-512S896 0 512 0Z" /></clipPath>
+          </defs>
+          <g clip-path="url(#scClip)">
+            <rect width="1024" height="1024" fill="url(#scGrad)" />
+            <path transform="translate(320 710)" d="M0 0C-14 42-38 68-76 84C-30 78 38 44 84 0Z" fill="#ffffff" />
+            <rect x="182" y="230" width="660" height="480" rx="132" fill="#ffffff" />
+            <path d="M512 230H710A132 132 0 0 1 842 362V578A132 132 0 0 1 710 710H512Z" fill="url(#scGrad)" opacity=".45" />
+            <rect x="496" y="310" width="32" height="320" rx="16" fill="url(#scGrad)" />
+            <rect x="246" y="422" width="180" height="36" rx="18" fill="url(#scGrad)" />
+            <rect x="246" y="482" width="120" height="36" rx="18" fill="url(#scGrad)" />
+            <rect x="592" y="452" width="180" height="36" rx="18" fill="url(#scGrad)" />
+          </g>
+        </svg>
+        <b>SupChat</b>
+        <span class="wm">Legal</span>
+      </a>
+      <nav aria-label="Documents">
+        <a class="navlink" href="privacy.html">Privacy Policy</a>
+        <a class="navlink" href="terms.html" aria-current="page">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="doc-head" data-od-id="doc-hero">
+      <div class="doc-shell">
+        <p class="eyebrow">Legal · Terms</p>
+        <h1>Terms of Service</h1>
+        <p class="doc-meta">
+          <span>Last Updated:&nbsp;October 12, 2026</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>11 sections</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span>SupChat for iOS</span>
+        </p>
+        <p class="lead">Welcome to SupChat. These Terms of Service (“Terms”) govern your access to and use of the SupChat mobile application (the “App”) provided by Zhuoqian Wang (“we”, “us”), an individual developer.</p>
+      </div>
+    </section>
+
+    <div class="doc-shell doc-layout">
+      <aside>
+        <nav class="toc" data-od-id="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ol>
+            <li><a href="#the-service"><span class="n">01</span>The Service</a></li>
+            <li><a href="#license-grant"><span class="n">02</span>License Grant</a></li>
+            <li><a href="#subscriptions"><span class="n">03</span>Subscriptions</a></li>
+            <li><a href="#acceptable-use"><span class="n">04</span>Acceptable Use</a></li>
+            <li><a href="#intellectual-property"><span class="n">05</span>Intellectual Property</a></li>
+            <li><a href="#disclaimer"><span class="n">06</span>Disclaimer</a></li>
+            <li><a href="#limitation-of-liability"><span class="n">07</span>Limitation of Liability</a></li>
+            <li><a href="#termination"><span class="n">08</span>Termination</a></li>
+            <li><a href="#changes"><span class="n">09</span>Changes to the Service and These Terms</a></li>
+            <li><a href="#general"><span class="n">10</span>General</a></li>
+            <li><a href="#contact"><span class="n">11</span>Contact Us</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <div class="doc-body">
+        <section class="note" data-od-id="binding-note" aria-label="Binding agreement">
+          <span class="note-icon" aria-hidden="true">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 3v5h5" />
+              <path d="M19 3l-7 7" />
+              <path d="M14.5 3H6a1.5 1.5 0 0 0-1.5 1.5v15A1.5 1.5 0 0 0 6 21h12a1.5 1.5 0 0 0 1.5-1.5V8L14.5 3z" />
+            </svg>
+          </span>
+          <div>
+            <p class="note-label">Binding agreement</p>
+            <p class="note-text">By downloading or using the App, you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
+          </div>
+        </section>
+
+        <article class="doc-section" id="the-service" data-od-id="sec-01-the-service">
+          <div class="sec-head"><span class="sec-num">01</span><h2>The Service</h2></div>
+          <div class="doc-prose">
+            <p>The App is an independent third-party multi-account workspace tool. It displays the official web clients of messaging platforms (for example, WhatsApp Web and Telegram Web) inside isolated containers, so you can stay signed in to more than one account on the same device.</p>
+            <p><strong>Important:</strong></p>
+            <ul>
+              <li>The App is not an official WhatsApp or Telegram product, and is not affiliated with, authorized by, endorsed by, or sponsored by Meta Platforms, Inc., Telegram FZ-LLC, or any of their affiliates. All trademarks, product names, and service names belong to their respective owners.</li>
+              <li>The messaging platforms are independent third-party services. Their own terms of service and privacy policies govern your use of those services, including how many devices you may link to an account. You are solely responsible for complying with the terms of each platform you use, and for any consequences imposed by a platform on your account.</li>
+              <li>We do not control the platforms. Their services may change, degrade, or become unavailable at any time, with or without notice, and we cannot guarantee uninterrupted or error-free access to any platform.</li>
+              <li>The App does not provide message push notifications. Alerts are limited to what the App can show while it is in the foreground.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="doc-section" id="license-grant" data-od-id="sec-02-license-grant">
+          <div class="sec-head"><span class="sec-num">02</span><h2>License Grant</h2></div>
+          <div class="doc-prose">
+            <p>We grant you a personal, non-exclusive, non-transferable, and revocable license to use the App on devices you own or control for personal, non-commercial purposes, subject to these Terms, the App Store Review Guidelines, and the terms of any third-party platform you access through the App.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="subscriptions" data-od-id="sec-03-subscriptions">
+          <div class="sec-head"><span class="sec-num">03</span><h2>Subscriptions</h2></div>
+          <div class="doc-prose">
+            <ul>
+              <li>The App is offered via an auto-renewing subscription, monthly or yearly. Where you are eligible, a plan starts with a 7-day free trial (eligibility is once per Apple ID). The price for your chosen plan is displayed in the App Store before you confirm the purchase.</li>
+              <li>Payment is charged to your Apple ID account at confirmation of purchase (or at the end of the free trial period, where applicable). The subscription renews automatically unless cancelled at least 24 hours before the end of the current period. Your Apple ID account is charged for renewal within 24 hours before the end of the current period.</li>
+              <li>You can manage or cancel your subscription, and turn off auto-renewal, at any time in your App Store account settings (Settings &gt; Apple Account &gt; Subscriptions). Cancelling takes effect at the end of the current billing period.</li>
+              <li>Refunds, exchanges, and other billing matters are handled by Apple under the App Store’s policies; we have no part in those decisions.</li>
+              <li>We may change pricing, but any change takes effect only for your next billing cycle, following notice from the App Store, and never changes the price of a period you have already paid for.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="doc-section" id="acceptable-use" data-od-id="sec-04-acceptable-use">
+          <div class="sec-head"><span class="sec-num">04</span><h2>Acceptable Use</h2></div>
+          <div class="doc-prose">
+            <p>You agree not to:</p>
+            <ul>
+              <li>Use the App for any illegal or unauthorized purpose, or in violation of any applicable law or the terms of any platform you access through it;</li>
+              <li>Use the App to send spam, bulk, scheduled, or trigger-based automated messages, or to harass, defraud, or harm anyone;</li>
+              <li>Circumvent or attempt to circumvent any limits, protections, or security mechanisms of the App or of any platform;</li>
+              <li>Modify, reverse engineer, decompile, or attempt to extract the source code of the App, except to the extent permitted by law;</li>
+              <li>Interfere with or disrupt the operation of the App or any platform, including by using bots, scrapers, or automated tools.</li>
+            </ul>
+            <p>You are solely responsible for your accounts on third-party platforms, for the messages you send, and for keeping your device and App Lock credentials secure.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="intellectual-property" data-od-id="sec-05-intellectual-property">
+          <div class="sec-head"><span class="sec-num">05</span><h2>Intellectual Property</h2></div>
+          <div class="doc-prose">
+            <p>All rights, title, and interest in the App, including but not limited to its code, graphics, and feature design, belong to us and are protected by international copyright and trademark laws. These Terms grant you no rights in the App except the limited license in Section 2. The names and trademarks of WhatsApp, Telegram, Meta Platforms, Inc., Telegram FZ-LLC, Apple, and any other third party belong to their respective owners.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="disclaimer" data-od-id="sec-06-disclaimer">
+          <div class="sec-head"><span class="sec-num">06</span><h2>Disclaimer</h2></div>
+          <div class="doc-prose">
+            <p>The App is provided “as is” and “as available.” To the maximum extent permitted by law, we make no warranties, express or implied, regarding the reliability, availability, accuracy, or error-free nature of the App or of any third-party platform you access through it. We do not warrant that the App will function without interruption or that any platform will remain accessible or compatible. You use the App entirely at your own risk.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="limitation-of-liability" data-od-id="sec-07-limitation-of-liability">
+          <div class="sec-head"><span class="sec-num">07</span><h2>Limitation of Liability</h2></div>
+          <div class="doc-prose">
+            <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of data, profits, or goodwill, arising from your use of or inability to use the App or any third-party platform, even if we have been advised of the possibility of such damages. To the maximum extent permitted by law, our total aggregate liability arising out of or related to the App shall not exceed the amount you paid us for the App in the twelve months preceding the claim (which, given the subscription model, means the subscription fees you paid in that period). Nothing in these Terms limits liability that cannot be limited by law, including liability for gross negligence, willful misconduct, or fraud.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="termination" data-od-id="sec-08-termination">
+          <div class="sec-head"><span class="sec-num">08</span><h2>Termination</h2></div>
+          <div class="doc-prose">
+            <p>We may suspend or terminate your license to use the App, at our sole discretion and without notice, if you violate these Terms or use the App in a way that is detrimental to other users, to any third-party platform, or to our business. You may stop using the App at any time; cancelling your subscription ends it at the end of the current billing period. Sections 5 through 11 survive termination.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="changes" data-od-id="sec-09-changes">
+          <div class="sec-head"><span class="sec-num">09</span><h2>Changes to the Service and These Terms</h2></div>
+          <div class="doc-prose">
+            <p>We may update the App and these Terms from time to time. If we make changes to these Terms, we will update the “Last Updated” date at the top of this page. Your continued use of the App after a change constitutes your acceptance of the updated Terms.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="general" data-od-id="sec-10-general">
+          <div class="sec-head"><span class="sec-num">10</span><h2>General</h2></div>
+          <div class="doc-prose">
+            <p>If any provision of these Terms is found unenforceable, the remaining provisions remain in full force and effect. Our failure to enforce any right is not a waiver of that right. You may not assign these Terms; we may assign them, including in connection with a merger, acquisition, or sale of assets.</p>
+            <p>These Terms are governed by the laws of the People’s Republic of China, without regard to conflict-of-laws rules. If we ever have a dispute we cannot settle informally, it belongs in the courts of Chengdu, Sichuan, China — unless the consumer-protection laws of your country of residence give you the right to a court closer to home, in which case you keep that right.</p>
+          </div>
+        </article>
+
+        <article class="doc-section" id="contact" data-od-id="sec-11-contact">
+          <div class="sec-head"><span class="sec-num">11</span><h2>Contact Us</h2></div>
+          <div class="doc-prose">
+            <p>If you have any questions about these Terms, please contact us at:</p>
+          </div>
+          <div class="contact-card" data-od-id="contact-card">
+            <span class="cc-label">Email</span>
+            <a class="cc-mail" href="mailto:pawloggy@gmail.com">pawloggy@gmail.com</a>
+            <button class="copy-btn" type="button" data-email="pawloggy@gmail.com">
+              <svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="11" height="11" rx="2.5" />
+                <path d="M5 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5" />
+              </svg>
+              <svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 12.5l5 5 10-11" />
+              </svg>
+              <span class="copy-label" aria-live="polite">Copy</span>
+            </button>
+            <p class="cc-note">Replies within 24–48 hours.</p>
+          </div>
+        </article>
+
+        <a class="crosslink" data-od-id="crosslink" href="privacy.html">
+          <span>
+            <span class="cl-label">Continue reading</span>
+            <span class="cl-title">Privacy Policy</span>
+          </span>
+          <span class="cl-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pagefoot" data-od-id="pagefoot">
+    <div class="doc-shell pagefoot-inner">
+      <span>© 2026 Zhuoqian Wang · SupChat</span>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:pawloggy@gmail.com">pawloggy@gmail.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="top-btn" type="button" data-od-id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M6 11l6-6 6 6" />
+    </svg>
+  </button>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* Scroll-spy: highlight the section currently in the reading lane. */
+      var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+      var sections = Array.prototype.slice.call(document.querySelectorAll('.doc-section'));
+      function setActive(id) {
+        links.forEach(function (a) {
+          a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+        });
+      }
+      if ('IntersectionObserver' in window && sections.length) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) setActive(entry.target.id);
+          });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+        sections.forEach(function (s) { spy.observe(s); });
+      }
+
+      /* Back-to-top visibility + bottom-of-page scroll-spy fallback. */
+      var topBtn = document.querySelector('.top-btn');
+      var lastId = sections.length ? sections[sections.length - 1].id : null;
+      function onScroll() {
+        if (topBtn) topBtn.classList.toggle('is-show', window.scrollY > 640);
+        if (lastId && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
+          setActive(lastId);
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      if (topBtn) {
+        topBtn.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      /* Copy email with clipboard fallback. */
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text);
+        }
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) { /* no-op */ }
+        ta.remove();
+        return Promise.resolve();
+      }
+      var copyBtn = document.querySelector('.copy-btn');
+      if (copyBtn) {
+        var label = copyBtn.querySelector('.copy-label');
+        var timer = null;
+        copyBtn.addEventListener('click', function () {
+          copyText(copyBtn.getAttribute('data-email')).then(function () {
+            copyBtn.classList.add('is-copied');
+            if (label) label.textContent = 'Copied';
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(function () {
+              copyBtn.classList.remove('is-copied');
+              if (label) label.textContent = 'Copy';
+            }, 1800);
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
