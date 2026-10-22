@@ -1,5 +1,6 @@
-# 只上传 HTML 文件（README / vercel.json 等仅供本地使用）
+# 只上传 HTML 与部署配置（README / text 等仅供本地使用）
 *
-!*.gitignore
+!.gitignore
 !*.html
+!vercel.json
 !*/
