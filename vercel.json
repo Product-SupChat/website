@@ -1,6 +1,0 @@
-{
-  "cleanUrls": true,
-  "redirects": [
-    { "source": "/", "destination": "/privacy", "permanent": false }
-  ]
-}

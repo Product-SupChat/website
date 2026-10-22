@@ -1,0 +1,5 @@
+# 只上传 HTML 文件（README / vercel.json 等仅供本地使用）
+*
+!*.gitignore
+!*.html
+!*/
